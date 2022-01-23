@@ -1,0 +1,55 @@
+#include<iostream>
+#include<string>
+using namespace std;
+string name,blood;
+int d,m,y,h,w,m1,m2,m3,m4,m5,sum,total_m;
+class A{
+  public:
+  void details_1(){
+    cout<<"Enter your name:";
+    cin>>name;
+    cout<<"Enter your D.O.B - in format dd mm yy:";
+    cin>>d>>m>>y;
+    cout<<"Enter your Blood Group:";
+    cin>>blood;
+  }
+};
+class B{
+  public:
+  void details_2(){
+    cout<<"Enter your Height in cm:";
+    cin>>h;
+    cout<<"Enter your weight in kg:";
+    cin>>w;
+  }
+};
+class C{
+  public:
+  void details_3(){
+    cout<<"Enter your marks in 5 subjects - Physics, Maths, Chemistry, Computer science, English respectively\n";
+    cin>>m1>>m2>>m3>>m4>>m5;
+    sum=m1+m1+m3+m4+m5;
+    total_m=sum;    
+    }
+};
+class D:public A,public B,public C{
+  public:
+  void show(){
+    cout<<"*******Details of Student*******\n";
+    cout<<"Name of the Student :"<<name<<endl;
+    cout<<"Date of Birth :"<<d<<"/"<<m<<"/"<<y<<endl;
+    cout<<"Blood Group :"<<blood<<endl;
+    cout<<"Height in : "<<h<<"cm"<<endl;
+    cout<<"Weight in :"<<w<<"kg"<<endl;
+    cout<<"Marks in 5 subjects"<<"\n"<<"Physics :"<<m1<<"/100"<<"\n"<<"Maths :"<<m2<<"/100"<<"\n"<<"Chemistry :"<<m3<<"/100"<<"\n"<<"Computer science :"<<m4<<"/100"<<"\n"<<"English :"<<m5<<"/100"<<"\n";
+    cout<<"Total marks of "<<name<<" in 5 subjects : "<<total_m<<"/"<<"500";
+  }
+};   
+int main(){
+  D obj1;
+  obj1.details_1();
+  obj1.details_2();
+  obj1.details_3();
+  obj1.show();
+  return 0;
+}
