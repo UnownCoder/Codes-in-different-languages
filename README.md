@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Unowncoder
 - 👀 I’m interested in ...
-- 🌱 I’m currently learning python
-- 💞️ I’m looking to collaborate on ...
+- 🌱 I’m currently learning python, app development
+- 💞️ I’m looking to collaborate on bubble.io and github
 - 📫 How to reach me ...
 
 <!---
